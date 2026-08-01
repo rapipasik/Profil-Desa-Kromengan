@@ -1,0 +1,6 @@
+{
+  "name": "Website Resmi Desa Kromengan",
+  "description": "Portal Profil Desa Kromengan, Kecamatan Kromengan, Kabupaten Malang - Informasi Desa, Potensi, Layanan Pengaduan Publik, dan Admin Panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
