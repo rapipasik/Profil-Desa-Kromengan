@@ -126,12 +126,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>
-            © {new Date().getFullYear()} Pemerintah Desa Kromengan, Kecamatan Kromengan, Kabupaten Malang.
-          </p>
-          <div className="flex items-center gap-1.5 text-slate-400 font-medium">
-            <span>Dikelola dengan semangat gotong royong</span>
+        <div className="mt-12 pt-6 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+          <div className="space-y-1 text-center md:text-left">
+            <p>
+              © {new Date().getFullYear()} Pemerintah Desa Kromengan, Kecamatan Kromengan, Kabupaten Malang.
+            </p>
+            <p className="text-[11px] text-emerald-400 font-medium">
+              Dikembangkan oleh <span className="font-bold text-emerald-300">KKN Kelompok 191 Universitas Muhammadiyah Malang (UMM) Tahun 2026</span>
+            </p>
+          </div>
+          <div className="flex items-center gap-1.5 text-slate-400 font-medium shrink-0">
+            <span>Dikelola dengan semangat gotong royong & pengabdian</span>
             <Heart className="w-3.5 h-3.5 text-emerald-400 fill-emerald-400" />
           </div>
         </div>

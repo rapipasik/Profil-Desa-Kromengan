@@ -15,7 +15,8 @@ import {
   Calendar,
   Eye,
   Building2,
-  PhoneCall
+  PhoneCall,
+  GraduationCap
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -439,6 +440,57 @@ export const BerandaSection: React.FC<BerandaSectionProps> = ({
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Developer Credit Section (KKN 191 UMM 2026) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 border border-emerald-800/80 shadow-xl overflow-hidden relative">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div className="lg:col-span-7 space-y-4">
+              <div className="inline-flex items-center gap-2 bg-emerald-800/80 text-emerald-300 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-600/50">
+                <GraduationCap className="w-4 h-4 text-emerald-400" />
+                <span>Website Pengabdian Masyarakat KKN</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                Diinisiasi & Dikembangkan Oleh <span className="text-emerald-400">KKN Kelompok 191</span> Universitas Muhammadiyah Malang
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Portal web resmi Desa Kromengan ini merupakan wujud nyata kontribusi mahasiswa <strong>KKN Kelompok 191 Universitas Muhammadiyah Malang (UMM) Tahun 2026</strong> dalam mendukung percepatan digitalisasi pelayanan publik, transparansi keuangan desa, dan promosi potensi lokal bersama Pemerintah Desa Kromengan.
+              </p>
+              <div className="pt-2 flex flex-wrap gap-3">
+                <button
+                  onClick={() => onNavigate('tentang')}
+                  className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-colors shadow-md"
+                >
+                  <span>Lihat Profil Pengembang & KKN</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-emerald-500/40 shadow-lg group">
+                <img
+                  src="/src/assets/images/foto_kkn_191_umm_1785639984913.jpg"
+                  alt="Foto Bersama KKN Kelompok 191 UMM 2026 dan Perangkat Desa Kromengan"
+                  className="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3.5 text-white">
+                  <p className="text-xs font-bold text-amber-300">
+                    KKN Kelompok 191 UMM 2026
+                  </p>
+                  <p className="text-[11px] text-slate-300">
+                    Foto bersama Kepala Desa Kromengan & Aparatur Pemdes
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 

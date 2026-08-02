@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatistikDesa } from '../types';
-import { MapPin, Compass, History, Target, Users, Landmark, Trees } from 'lucide-react';
+import { MapPin, Compass, History, Target, Users, Landmark, Trees, GraduationCap, Award, HeartHandshake } from 'lucide-react';
 
 interface TentangDesaSectionProps {
   statistik: StatistikDesa;
@@ -175,6 +175,92 @@ export const TentangDesaSection: React.FC<TentangDesaSectionProps> = ({ statisti
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Tim Pengembang & Program KKN UMM 2026 */}
+      <div className="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-950 text-white rounded-3xl p-6 sm:p-10 border border-emerald-800 shadow-xl space-y-8 relative overflow-hidden">
+        <div className="absolute top-0 right-0 -mt-8 -mr-8 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10 border-b border-emerald-800/80 pb-6">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-2 bg-emerald-800/80 text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-600/40">
+              <GraduationCap className="w-4 h-4 text-emerald-400" />
+              <span>Program Pengabdian Masyarakat KKN</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+              Tim Pengembang Website Desa Kromengan
+            </h2>
+            <p className="text-xs sm:text-sm text-emerald-200/90 max-w-2xl">
+              Portal informasi dan pelayanan publik digital ini dirancang dan dikembangkan oleh mahasiswa <strong className="text-emerald-400">KKN Kelompok 191 Universitas Muhammadiyah Malang (UMM) Tahun 2026</strong> dalam rangka program digitalisasi tata kelola desa.
+            </p>
+          </div>
+
+          <div className="shrink-0 bg-emerald-900/60 p-4 rounded-2xl border border-emerald-700/60 backdrop-blur-md flex items-center gap-3">
+            <div className="w-12 h-12 rounded-xl bg-amber-400 text-slate-950 font-black text-xl flex items-center justify-center shadow-md">
+              191
+            </div>
+            <div>
+              <p className="text-xs text-amber-300 font-bold uppercase">KKN Berdampak 2026</p>
+              <p className="text-sm font-black text-white">Univ. Muhammadiyah Malang</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Group Photo Showcase */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div className="lg:col-span-7">
+            <div className="relative rounded-2xl overflow-hidden border-2 border-emerald-500/40 shadow-2xl group">
+              <img
+                src="/src/assets/images/foto_kkn_191_umm_1785639984913.jpg"
+                alt="Foto Bersama KKN Kelompok 191 Universitas Muhammadiyah Malang Tahun 2026 dan Perangkat Desa Kromengan"
+                className="w-full h-auto max-h-[420px] object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white space-y-1">
+                <p className="text-sm sm:text-base font-bold text-amber-300 flex items-center gap-2">
+                  <HeartHandshake className="w-5 h-5 text-amber-400" />
+                  <span>Foto Bersama KKN Kelompok 191 UMM & Perangkat Desa Kromengan</span>
+                </p>
+                <p className="text-xs text-slate-300">
+                  Sinergi kolaborasi mahasiswa KKN Universitas Muhammadiyah Malang bersama Kepala Desa Kromengan Bpk. H. Sukadi, S.Sos dan seluruh jajaran aparatur desa (Agustus 2026).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 space-y-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <div className="bg-emerald-900/40 p-4 rounded-xl border border-emerald-800/60 space-y-2">
+              <h4 className="font-bold text-emerald-300 text-sm flex items-center gap-2">
+                <Award className="w-4 h-4 text-amber-400" />
+                <span>Misi Pengembangan Portal Digital</span>
+              </h4>
+              <p className="text-slate-300 text-xs">
+                Inisiatif ini bertujuan untuk mempercepat aksesibilitas sistem pelayanan publik, transparansi keuangan desa, publikasi potensi UMKM/pertanian tebu, serta kanal pengaduan langsung bagi seluruh warga Desa Kromengan.
+              </p>
+            </div>
+
+            <div className="space-y-2 pt-2">
+              <h5 className="font-bold text-white text-xs uppercase tracking-wider text-emerald-400">
+                Fokus Program Kerja KKN 191 UMM:
+              </h5>
+              <ul className="space-y-2 text-xs text-slate-300">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
+                  <span><strong>Digitalisasi Layanan Publik:</strong> Pembuatan sistem pengaduan online dan alur surat keterangan desa.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
+                  <span><strong>Promosi Potensi Lokal:</strong> Pemetaan komoditas tebu, UMKM keripik, dan seni budaya lokal Kromengan.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 shrink-0" />
+                  <span><strong>Transparansi Informasi:</strong> Pemuatan berita resmi, agenda desa, dan rincian APBDes 2026.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
